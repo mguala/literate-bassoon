@@ -1,0 +1,37 @@
+Propuesta de Refactorización a Vue.js (v1)
+
+Objetivo:
+Transformar el portafolio actual de fotografía en una aplicación moderna basada en Vue.js para mejorar la organización del código, reutilización de componentes y facilitar el mantenimiento futuro.
+
+Tecnologías Propuestas:
+- Framework: Vue 3 (Composition API)
+- Build Tool: Vite (para un desarrollo más rápido)
+- Estilos: SCSS estructurado (base SMACSS)
+- Gestión de Datos: Archivo externo para los metadatos de las imágenes.
+
+Estructura del Proyecto:
+- src/components/
+  - Header.vue
+  - PortfolioGrid.vue
+  - About.vue
+  - Services.vue
+  - Contact.vue
+  - Footer.vue
+- src/assets/scss/
+  - main.scss (Variables y estilos globales)
+- src/data/images.js (Contenedor de imageData)
+
+Beneficios:
+1. Reactividad nativa: No más manipulación manual del DOM con document.createElement.
+2. Modularidad: Cada sección del sitio será un componente independiente.
+3. Escalabilidad: Fácil de añadir nuevas fotos o secciones.
+4. Mejoras de rendimiento: Uso de lazy loading de Vue y optimización de Vite.
+
+Siguientes Pasos:
+1. Inicializar el entorno de Node con Vite.
+2. Migrar la data de script.js a un archivo de datos reactivo.
+3. Fragmentar el HTML actual en componentes .vue.
+4. Integrar SCSS para mantener la estética actual pero con mejor estructura.
+
+¿Deseas que proceda con esta transformación?
+Una vez aprobado, inicializaré el proyecto y mostraré la estructura base.

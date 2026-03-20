@@ -1,0 +1,31 @@
+Análisis de Diseño Temático: Estilo Minecraft (v1)
+
+Objetivo:
+Crear una estética retro-pixelada basada en el estilo de Minecraft para el portafolio, manteniendo la claridad de las fotos pero con marcos de bloques y botones texturizados.
+
+Componentes del Estilo:
+
+1. Paleta de Colores:
+- #5AA351: Verde "Pasto" (Header/Barra Superior)
+- #794D3A: Marrón "Tierra" (Cuerpo/Sobre mí)
+- #C6C6C6: Gris "Interface" (Botones/Contenedores)
+- #555555: Bordes oscuros 
+- #FFFFFF: Bordes de luz para el efecto 3D pixelado.
+
+2. Tipografía:
+- 'Press Start 2P' (Google Fonts) para el toque pixelado.
+
+3. Elementos Gráficos:
+- Bordes: Estilo de 2px con sombras internas (inset) para simular la profundidad de los bloques de Minecraft.
+- Botones: Cuadrados con bordes de luz/sombra.
+- Fondo de la página: Textura sutil basada en bloques de piedra o tierra (Dirt).
+
+4. Layout de Imágenes:
+- Cada foto se enmarcará en un marco tipo "Item Frame" o "Painting" con bordes de madera (Oak Log/Plank).
+
+Siguientes Pasos:
+1. Crear el archivo de variables assets/scss/minecraft.scss.
+2. Definir mixins de bordes pixelados.
+3. Aplicar al index.html principal.
+
+¿Deseas que empiece con la codificación de este estilo? I'll use npx to handle the sass compilation despite the terminal restrictions.

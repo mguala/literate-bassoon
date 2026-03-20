@@ -1,0 +1,9 @@
+node_modules
+dist
+.vscode
+.DS_Store
+*.local
+legacy/assets/css/*.css
+legacy/assets/scss/*.scss
+!legacy/assets/css/minecraft_v1.css
+!legacy/assets/scss/minecraft_v1.scss

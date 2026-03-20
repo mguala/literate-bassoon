@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  image-rendering: pixelated;
+}
+
+body {
+  font-family: "Press Start 2P", cursive;
+  background-color: #313131;
+  color: #ffffff;
+  line-height: 1.8;
+}
+
+.nav-minimal {
+  background-color: #5AA351;
+  border: 4px solid #373737;
+  box-shadow: inset -4px -4px 0px rgba(0, 0, 0, 0.2), inset 4px 4px 0px rgba(255, 255, 255, 0.4);
+  padding: 1rem;
+  position: relative;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  border-radius: 0;
+}
+
+.logo {
+  font-size: 1.2rem;
+  color: #ffffff;
+  text-shadow: 2px 2px 0px #373737;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+.nav-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.7rem;
+}
+.nav-links a:hover {
+  color: #C6C6C6;
+  text-decoration: underline;
+}
+
+.portfolio-grid {
+  padding: 4rem 2rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.grid-item {
+  background-color: #8B8B8B;
+  border: 4px solid #373737;
+  box-shadow: inset -4px -4px 0px rgba(0, 0, 0, 0.2), inset 4px 4px 0px rgba(255, 255, 255, 0.4);
+  padding: 1rem;
+  position: relative;
+  aspect-ratio: 1;
+  overflow: visible;
+}
+.grid-item .grid-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 4px solid #373737;
+}
+.grid-item .overlay {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 4px solid #373737;
+  box-shadow: inset -4px -4px 0px rgba(0, 0, 0, 0.2), inset 4px 4px 0px rgba(255, 255, 255, 0.4);
+  padding: 1rem;
+  position: relative;
+  padding: 0.5rem;
+  border-width: 2px;
+}
+.grid-item .overlay h3 {
+  font-size: 0.7rem;
+  margin-bottom: 0.3rem;
+}
+.grid-item .overlay p {
+  font-size: 0.5rem;
+  color: #C6C6C6;
+}
+.grid-item .overlay .device-info {
+  display: none;
+}
+
+section {
+  padding: 6rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  background: #795548;
+  background-color: #795548;
+  border: 4px solid #373737;
+  box-shadow: inset -4px -4px 0px rgba(0, 0, 0, 0.2), inset 4px 4px 0px rgba(255, 255, 255, 0.4);
+  padding: 1rem;
+  position: relative;
+  display: inline-block;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.about-minimal {
+  background-color: #8B8B8B;
+  border: 4px solid #373737;
+  box-shadow: inset -4px -4px 0px rgba(0, 0, 0, 0.2), inset 4px 4px 0px rgba(255, 255, 255, 0.4);
+  padding: 1rem;
+  position: relative;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.service-item {
+  background-color: #C6C6C6;
+  border: 4px solid #373737;
+  box-shadow: inset -4px -4px 0px rgba(0, 0, 0, 0.2), inset 4px 4px 0px rgba(255, 255, 255, 0.4);
+  padding: 1rem;
+  position: relative;
+  color: #000000;
+}
+.service-item h3 {
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}
+.service-item p {
+  font-size: 0.6rem;
+}
+
+.contact-minimal {
+  text-align: center;
+  background-color: #8B8B8B;
+  border: 4px solid #373737;
+  box-shadow: inset -4px -4px 0px rgba(0, 0, 0, 0.2), inset 4px 4px 0px rgba(255, 255, 255, 0.4);
+  padding: 1rem;
+  position: relative;
+  margin-bottom: 4rem;
+}
+.contact-minimal .contact-link {
+  background-color: #C6C6C6;
+  border: 4px solid #373737;
+  box-shadow: inset -4px -4px 0px rgba(0, 0, 0, 0.2), inset 4px 4px 0px rgba(255, 255, 255, 0.4);
+  padding: 1rem;
+  position: relative;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  transition: all 0.1s;
+  user-select: none;
+  display: inline-block;
+  color: #373737;
+  text-align: center;
+}
+.contact-minimal .contact-link:hover {
+  background-color: #9E9E9E;
+  color: #ffffff;
+}
+.contact-minimal .contact-link:active {
+  box-shadow: inset 4px 4px 0px rgba(0, 0, 0, 0.2), inset -4px -4px 0px rgba(255, 255, 255, 0.4);
+  transform: translateY(2px);
+}
+.contact-minimal .contact-link {
+  margin: 2rem 0;
+  text-decoration: none;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.social-links a {
+  background-color: #C6C6C6;
+  border: 4px solid #373737;
+  box-shadow: inset -4px -4px 0px rgba(0, 0, 0, 0.2), inset 4px 4px 0px rgba(255, 255, 255, 0.4);
+  padding: 1rem;
+  position: relative;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  transition: all 0.1s;
+  user-select: none;
+  display: inline-block;
+  color: #373737;
+  text-align: center;
+}
+.social-links a:hover {
+  background-color: #9E9E9E;
+  color: #ffffff;
+}
+.social-links a:active {
+  box-shadow: inset 4px 4px 0px rgba(0, 0, 0, 0.2), inset -4px -4px 0px rgba(255, 255, 255, 0.4);
+  transform: translateY(2px);
+}
+.social-links a {
+  padding: 0.5rem 1rem;
+  font-size: 0.5rem;
+  text-decoration: none;
+}
+
+footer {
+  background-color: #373737;
+  border: 4px solid #373737;
+  box-shadow: inset -4px -4px 0px rgba(0, 0, 0, 0.2), inset 4px 4px 0px rgba(255, 255, 255, 0.4);
+  padding: 1rem;
+  position: relative;
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.5rem;
+}
+
+/*# sourceMappingURL=minecraft.css.map */
