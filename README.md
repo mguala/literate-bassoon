@@ -39,4 +39,4 @@ npm run dev
 3. **Optimización con public folder**: Manejo de rutas absolutas para activos estáticos en Vite.
 
 ---
-© 2024 Visual Stories. Producido con enfoque en impacto visual.
+© 2026 Cabeza de Vitrubio. EL pie es la septima parte.
